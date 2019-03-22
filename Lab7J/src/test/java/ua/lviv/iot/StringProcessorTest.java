@@ -10,10 +10,6 @@ public class StringProcessorTest extends TestCase {
 
     public void testFilter() throws IOException {
 
-        sp.filterConstantText();
-
-        assertEquals(3, sp.getListOfWords().size());
-
-        sp.printConstantFilterText();
+        assertEquals("[olena, green, noose]", sp.filterText("olena has green eyes or noose?", "5"));
     }
 }
